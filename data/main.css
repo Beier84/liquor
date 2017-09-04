@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 body {
   background: url(bckgrnd1.jpg) center no-repeat fixed;
 	background-size: cover;
@@ -35,8 +39,7 @@ nav {
 
 nav ul {
 	list-style-type: none;
-	background-color: grey;
-	opacity: 0.9;
+	background-color: rgba(128, 128, 128, 0.9);
 	overflow: hidden;
   margin: 0;
 }
@@ -53,34 +56,38 @@ nav ul	li a {
 	padding: 0.1em 0.5em;
 	color: black;
 	text-decoration: none;
-	background-color: grey;
 }
 
-nav ul	li a:hover {
+nav ul li a:hover {
 	background-color: #383838;
-	opacity: 0.9;
 	color: white;
+  border-radius: 1em;
 }
 
-nav ul ul {
+nav ul li ul {
 	display:none;
 	position: absolute;
 }
 
-nav ul ul li {
+nav ul li ul li {
 	float: none;
 }
 
-nav ul ul a {
+nav ul li ul li a {
 	font-size: 1.5em;
 	background-color: black;
 	color: white;
+  border-radius: 0.5em;
 }
 
 nav ul li:hover ul {
 	padding-left: 0;
 	display: block;
-	z-index: 1;
+  background-color: rgba(128, 128, 128, 0)
+}
+
+nav ul li ul li a:hover {
+  border-radius: 0.5em;
 }
 
 div {
