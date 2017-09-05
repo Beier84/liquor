@@ -67,6 +67,7 @@ nav ul li ul li a {
   background-color: black;
   color: white;
   border-radius: 0.5em;
+  padding: 0.5em;
 }
 
 nav ul li:hover ul {
