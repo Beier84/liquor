@@ -91,23 +91,50 @@ nav ul li ul li a:hover {
 
 div {
   margin-top: 4em;
-  background-color: rgba(192, 192, 192, 0.95);
+  color: transparent;
   font-family: myFont1;
   font-weight: bold;
-  font-variant: small-caps;:
+  font-variant: small-caps;
+  animation: color 3s linear forwards;
+}
+
+@keyframes color {
+  0% {
+    background-color: rgba(192, 192, 192, 0);
   }
+  100% {
+    background-color: rgba(192, 192, 192, 0.95);
+  }
+}
 
 div h1 {
+  position: relative;
   margin-top: 0;
   padding-top: 1em;
   text-align: center;
 }
 
 div p {
+ position: relative;
   font-size: 1.5em;
   text-indent: 2.5em;
   text-align: justify;
   padding: 0 2em;
+}
+
+h1, p {
+  animation: slide 3s 3s ease-out forwards;
+}
+
+@keyframes slide {
+  0% {
+    left: -100%;
+    color: initial;
+  }
+  100% {
+    left: 0;
+    color: initial;
+  }
 }
 
 #secpar {
