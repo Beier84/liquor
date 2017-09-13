@@ -5,15 +5,16 @@ html {
 
 body {
   height: 100%;
+  min-width: 920px;
+  min-height: 580px;
   background: url(bckgrnd1.jpg) center no-repeat fixed;
   background-size: cover;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-  top: 0;
-  left: 0;
-  width: 100%;
   font: 6em 'fredericka the great';
   background-color: black;
   font-variant: small-caps;
@@ -23,9 +24,9 @@ header {
 }
 
 nav {
-  left: 0;
-  width: 100%;
   margin-top: 0;
+  float: left;
+  overflow: visible;
 }
 
 nav ul {
@@ -37,6 +38,10 @@ nav ul {
 
 nav ul li {
   float: left;
+}
+
+#contact {
+  float: right;
 }
 
 nav ul	li a {
@@ -81,7 +86,6 @@ nav ul li ul li a:hover {
 }
 
 div {
-  position: relative;
   margin-top: 4em;
   color: transparent;
   font-family: 'Special Elite';
@@ -135,11 +139,8 @@ h1, p {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  font:bold 1em myFont1;
-  color: white;
+  margin-top: 6em;
+  font: bold 1em 'Special Elite';
+  color: black;
   text-align: center;
 }
